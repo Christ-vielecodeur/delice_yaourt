@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nos Délices – Delice de Merveille</title>
+  <link rel="stylesheet" href="style.css" />
+ 
+</head>
+<body>
+
+  <section class="intro-section" aria-label="Introduction">
+    <h1 class="main-title"> Delice de Merveille 🍨</h1>
+    <p class="intro-text">
+      Nos yaourts artisanaux sont faits avec amour, des ingrédients naturels, et une passion pour le goût. Frais, onctueux, savoureux… chaque pot est une merveille ! Découvrez nos saveurs irrésistibles à travers notre sélection.
+    </p>
+  </section>
+
+  <section class="cards-section" aria-label="Sélection de produits">
+    <div class="card-container" tabindex="0" aria-describedby="desc-fraise">
+      <div class="flip-card" role="button" aria-pressed="false" aria-label="Yaourt à la fraise, voir description" tabindex="0" onkeydown="if(event.key==='Enter'){this.classList.toggle('hovered')}">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/images/delice1.jpg" alt="Yaourt Fraise" class="product-image" />
+            <h1 class="product-title">À la fraise</h1>
+          </div>
+          <div class="flip-card-back" id="desc-fraise">
+            <h2>Fraise fraîche 🍓</h2>
+            <p>Yaourt onctueux à la fraise, 100% naturel, sans conservateurs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container" tabindex="0" aria-describedby="desc-banane">
+      <div class="flip-card" role="button" aria-pressed="false" aria-label="Yaourt à la banane, voir description" tabindex="0" onkeydown="if(event.key==='Enter'){this.classList.toggle('hovered')}">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/images/delice2.jpg" alt="Yaourt Banane" class="product-image" />
+            <h1 class="product-title">À la banane</h1>
+          </div>
+          <div class="flip-card-back" id="desc-banane">
+            <h2>Saveur banane 🍌</h2>
+            <p>Délice crémeux au goût banane. Fait maison avec amour.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container" tabindex="0" aria-describedby="desc-choco">
+      <div class="flip-card" role="button" aria-pressed="false" aria-label="Yaourt au chocolat, voir description" tabindex="0" onkeydown="if(event.key==='Enter'){this.classList.toggle('hovered')}">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/images/delice3.jpg" alt="Yaourt Chocolat" class="product-image" />
+            <h1 class="product-title">Au chocolat</h1>
+          </div>
+          <div class="flip-card-back" id="desc-choco">
+            <h2>Saveur chocolat 🍫</h2>
+            <p>Délice crémeux au goût chocolat. Fait maison avec amour.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LES NOUVELLES SECTIONS ICI, EN BAS DES CARDS -->
+
+  <!-- Livraison -->
+  <section class="delivery-section" aria-label="Livraison rapide et sécurisée">
+    <div class="delivery-image" aria-hidden="true">
+      <img src="assets/images/moto.png" alt="Livreur en moto rapide" />
+    </div>
+    <div class="delivery-text">
+      <h2 class="section-title">Livraison rapide et sécurisée</h2>
+      <p>
+        Nous vous livrons vos délices artisanaux directement à domicile, avec un service express en moto. Suivi en temps réel et respect des règles sanitaires assurés.
+      </p>
+    </div>
+  </section>
+
+  <!-- Paiement -->
+  <section class="payment-section" aria-label="Modes de paiement disponibles">
+    <div class="payment-method" aria-label="Paiement main à la main">
+     <img src="assets/images/argent.png" alt="" />
+      Main à la main
+    </div>
+    <div class="payment-method" aria-label="Paiement Mobile Money">
+      <img src="assets/images/money.png" alt="" />
+      Mobile Money
+    </div>
+  </section>
+
+  <!-- Témoignages -->
+  <section class="testimonials-section" aria-label="Témoignages de nos clients">
+    <h2 class="section-title">Ils nous font confiance</h2>
+    <blockquote class="testimonial active" tabindex="0">
+      « J’adore vos yaourts, la livraison est super rapide et le goût est exceptionnel ! »
+      <footer class="testimonial-author">— Marie T.</footer>
+    </blockquote>
+    <blockquote class="testimonial" tabindex="0">
+      « Service impeccable, produits frais et artisanaux, je recommande vivement. »
+      <footer class="testimonial-author">— Jean P.</footer>
+    </blockquote>
+    <blockquote class="testimonial" tabindex="0">
+      « Facile de commander, paiement sécurisé, et j’ai reçu un accueil très chaleureux. »
+      <footer class="testimonial-author">— Aline M.</footer>
+    </blockquote>
+    <div class="testimonial-nav" role="tablist" aria-label="Navigation des témoignages">
+      <button aria-label="Témoignage 1" aria-controls="testimonial1" aria-selected="true"></button>
+      <button aria-label="Témoignage 2" aria-controls="testimonial2" aria-selected="false"></button>
+      <button aria-label="Témoignage 3" aria-controls="testimonial3" aria-selected="false"></button>
+    </div>
+  </section>
+
+  <!-- Galerie -->
+  <section class="gallery-section" aria-label="Galerie de photos et vidéos">
+    <h2 class="section-title">Notre univers en images</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" tabindex="0">
+        <img src="assets/images/delice3.jpg" alt="Intérieur de notre usine" />
+      </div>
+      <div class="gallery-item" tabindex="0">
+        <img src="assets/images/delice.jpg" alt="Fabrication artisanale" />
+      </div>
+      <div class="gallery-item" tabindex="0">
+        <video controls muted preload="metadata" poster="assets/images/usine3.jpg" aria-label="Vidéo de la fabrication">
+          <source src="assets/video/delice.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la vidéo.
+        </video>
+      </div>
+      <div class="gallery-item" tabindex="0">
+        <img src="assets/images/production.jpg" alt="Production et emballage" />
+      </div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/242068529431" target="_blank" rel="noopener" class="whatsapp-button" aria-label="Contactez Delice de Merveille sur WhatsApp">
+    📱 Notre WhatsApp
+  </a>
+
+  <script>
+    // Témoignages simple slider
+    const testimonials = document.querySelectorAll('.testimonial');
+    const buttons = document.querySelectorAll('.testimonial-nav button');
+    let current = 0;
+    buttons.forEach((btn, i) => {
+      btn.addEventListener('click', () => {
+        testimonials[current].classList.remove('active');
+        buttons[current].setAttribute('aria-selected', 'false');
+        current = i;
+        testimonials[current].classList.add('active');
+        buttons[current].setAttribute('aria-selected', 'true');
+      });
+    });
+
+    // Ajoute la classe hovered au clic pour la flip card sur mobile/souris
+    document.querySelectorAll('.flip-card').forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('hovered');
+      });
+    });
+  </script>
+
+</body>
+</html>
